@@ -8,7 +8,7 @@ int get(int i,string x,string &s){
         cnt++;
         string a=x+x;
         x=a;
-    }
+    } 
     return cnt;
 }
 int solve(string x,string s,int n,int m){
