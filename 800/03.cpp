@@ -7,7 +7,7 @@ int solve(string s){
         c1=0;
         while(i<s.length() && s[i]=='#') i++;
         while(i<s.length() && s[i]=='.') c1++,i++;
-        if(c1>=3) return 2;
+        if(c1>=3) return 2; 
         c2+=c1;
         i++;
     }
