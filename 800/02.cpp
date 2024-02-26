@@ -1,6 +1,6 @@
 // Problem Link : https://codeforces.com/problemset/problem/1901/A
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; 
 int minimum_fuel(int n,int x,int arr[]){
     int i,ans=0,cnt=0;
     unordered_map<int,bool> pump;
