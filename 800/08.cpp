@@ -14,6 +14,6 @@ int main()
             mp[x]++;
         }
         if(mp.find(k)!=mp.end()) cout<<"YES"<<endl;
-        else cout<<"NO"<<endl;
+        else cout<<"NO"<<endl; 
     }
 }
