@@ -6,7 +6,7 @@ int main()
     int t;
     cin>>t;
     while(t--){
-        int s1=0,s2=0,n,x;
+        int s1=0,s2=0,n,x; 
         cin>>n;
         n--;
         while(n--){
