@@ -5,7 +5,7 @@ int main()
 {
     int t;
     cin>>t;
-    while(t--){
+    while(t--){ 
         int n,i,x;
         cin>>n;
         vector<int> arr(n);
