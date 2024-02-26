@@ -10,7 +10,7 @@ int main()
         cin>>n;
         unordered_map<int,int> cnt;
         while(i<n){
-            cin>>x;
+            cin>>x; 
             cnt[x]++;
             i++;
         }
