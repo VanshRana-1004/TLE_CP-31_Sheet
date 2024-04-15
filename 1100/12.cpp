@@ -25,8 +25,8 @@ using namespace std;
 #define suf_sum(suf,arr,n) for(i=n-2;i>=0;i--) suf[i]=suf[i+1]+arr[i]
 const double pie=3.14159265358979323846264338327950;
 const ll mod=1e9+7;
-ll solve(ll &num,ll &n,vll &a){
-    ll mid,s=0,e=n-1;
+ll solve(ll &num,ll e,ll &n,vll &a){
+    ll mid,s=0;
     while(s<=e){
         mid=s+(e-s)/2;
         if(a[mid]<=num) s=mid+1;
@@ -47,7 +47,8 @@ int main()
         srt(a);
         srtr(b);
         vll grt(n,0);
-        for(i=0;i<n;i++) grt[i]=solve(b[i],n,a);
+        grt[0]=solve(b[0],n-1,n,a);
+        for(i=1;i<n;i++) grt[i]=solve(b[i],n-grt[i-1]-1,n,a);
         ll p=1;
         for(i=0;i<n;i++) p=((p%mod)*(grt[i]-i)%mod)%mod;
         cout<<p<<nl;
